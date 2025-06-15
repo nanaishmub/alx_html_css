@@ -1,5 +1,6 @@
 body{
-    flex-direction: column; /**/
+    background-color: rgba(255, 148, 148, 0.842);
+    flex-direction: column;  
 }
 
 main{
@@ -11,14 +12,29 @@ main, body {
     display: flex;
 }
 
+header{
+    background-color: rgba(255, 96, 96, 0.692);
+    width: 100%;
+    margin: 0;
+}
+
 article {
     flex: 2;
 }
 
 aside {
+    background-color: rgba(255, 130, 130, 0.842);
     flex: 1;
+    height: fit-content;
+    margin-top: 150px;
 }
 
 article, aside {
     overflow-y: auto;
+}
+
+h1{
+    text-align: center;
+    font-size: 50px;
+    color: rgb(255, 84, 72);
 }
