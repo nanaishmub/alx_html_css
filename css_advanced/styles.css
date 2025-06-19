@@ -1,10 +1,12 @@
 @font-face{
-    font-family: 'Source Sans Pro';
-    src: url(C:\Users\USER\Downloads\source-sans-pro)
+    font-family: Source Sans Pro;
+    src: url(./SourceSansPro-Bold.otf)
 }
 
 body{
     background-image: url(./Object.png);
+    font-family: Source Sans Pro;
+    color:#ffffff;
 }
 
 header{
@@ -22,6 +24,7 @@ nav {
     width: 100%;
     height: 100%;
     padding: 30px 80px 30px 80px;
+    margin-left: 0;
 }
 
 nav ul{
@@ -35,8 +38,8 @@ nav ul{
 nav ul li{
     list-style-type: none;
     color: white;
-    font-family: 'Source Sans Pro';
-    padding: 5px;
+    font-size: 12px;
+    padding: 10px;
     display: inline-block;
     margin: 0 5px;
 }
@@ -62,3 +65,46 @@ a:active{
     text-decoration: none;
 }
 
+/*main{
+    display: flex;
+}*/
+
+#home-pg{
+    display: inline-block;
+    flex-wrap: wrap;
+}
+
+#content{
+    text-align: center;
+}
+
+#content h1{
+    font-size: 120px;
+    margin-top: 210px;
+    margin-bottom: 0;
+    margin-left: 150px;
+    color: #ffffff;
+}
+
+.smigh {
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-top: 0;
+    padding-top:0;
+    margin-left: 45px;
+}
+
+#register{
+    color:#ffffff;
+    text-align: center;
+    border: #C271FF;
+    border-radius: 42px;
+    background-color: #C271FF;
+    box-shadow: none;
+    font-family: Source Sans Pro;
+    margin-top: 30px;
+    margin-left: 40px;
+    width: 162px;
+    height: 44px;
+}
