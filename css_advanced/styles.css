@@ -5,6 +5,7 @@
 
 body{
     background-image: url(./Object.png);
+    background-repeat: no-repeat;
     font-family: Source Sans Pro;
     color:#ffffff;
 }
@@ -72,10 +73,13 @@ a:active{
 #home-pg{
     display: inline-block;
     flex-wrap: wrap;
+    
 }
 
 #content{
     text-align: center;
+    height: 100vw;
+    width: 100%;
 }
 
 #content h1{
@@ -107,4 +111,45 @@ a:active{
     margin-left: 40px;
     width: 162px;
     height: 44px;
+}
+
+#pros{
+    margin-top: 185px;
+}
+
+#pros h2 {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+#proDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+#div1, 
+#div2,
+#div3,
+#div4{
+    display: flex-box;
+    flex-direction: column;
+    text-align: center;
+}
+
+.proPic {
+    width: 150px;
+    height: 150px;
+}
+
+.proName{
+    margin-bottom: 10px;
+}
+
+.proAwd{
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 16px;
+    font-weight: normal;
 }
