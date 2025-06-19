@@ -73,7 +73,7 @@ a:active{
 #home-pg{
     display: inline-block;
     flex-wrap: wrap;
-    
+    height: 34.5vw;
 }
 
 #content{
@@ -114,7 +114,7 @@ a:active{
 }
 
 #pros{
-    margin-top: 185px;
+    margin-top: 150px;
 }
 
 #pros h2 {
