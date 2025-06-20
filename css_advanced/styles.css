@@ -1,6 +1,6 @@
 @font-face{
     font-family: Source Sans Pro;
-    src: url(./SourceSansPro-Bold.otf)
+    src: url(./source-sans-pro/)
 }
 
 body{
@@ -185,3 +185,50 @@ a:active{
     margin-left: 0;
 }
 
+#tutorials {
+    color: black;
+}
+
+#tutorials h2 {
+    text-align: center;
+    font-size: 32px;
+}
+
+#tutDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.play, .tutPic {
+    position: relative;
+}
+
+.play {
+    width: 64px;
+    height: 64px;
+    z-index: 1;
+}
+.tutPic {
+    width: 255px;
+    height: 154px;
+    z-index: 0;
+}
+
+.author {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: center;
+}
+
+.author img {
+    width: 30px;
+    height: 30px;
+
+}
+
+.author h4 {
+    font-size: 14px;
+    color: #C271FF;
+}
