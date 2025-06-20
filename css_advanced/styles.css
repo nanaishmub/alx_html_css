@@ -1,6 +1,6 @@
 @font-face{
     font-family: Source Sans Pro;
-    src: url(./source-sans-pro/)
+    src: url(./source-sans-pro/SourceSansPro-Bold.otf)
 }
 
 body{
@@ -136,6 +136,8 @@ a:active{
     display: flex-box;
     flex-direction: column;
     text-align: center;
+    width: 150px;
+    height: 237px;
 }
 
 .proPic {
@@ -198,37 +200,78 @@ a:active{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin: 40px 80px;
 }
 
-.play, .tutPic {
+.video {
+    display: inline-block;
     position: relative;
 }
 
 .play {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
     width: 64px;
     height: 64px;
-    z-index: 1;
 }
 .tutPic {
     width: 255px;
     height: 154px;
-    z-index: 0;
+    display: block;
+}
+
+.vidDescription {
+    color: #071629;
 }
 
 .author {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    gap: 10px;
     align-content: center;
 }
 
 .author img {
     width: 30px;
     height: 30px;
-
+    margin-top: 10px;
 }
 
 .author h4 {
     font-size: 14px;
     color: #C271FF;
 }
+
+.tutDivClass {
+    width: 255px;
+    height: 335px;
+}
+
+.tutDivClass p {
+    margin-left: 0;
+    margin-top: 2;
+}
+
+.ratePrgh {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.rating {
+    display: flex;
+    flex-direction: row;
+    margin-left:0;
+    height: 15px;
+}
+
+.rating-purple, .minutes {
+    color: #C271FF;
+}
+
+.rating-grey {
+    color: #D8D8D8;
+}
+
