@@ -1,12 +1,94 @@
 @font-face{
     font-family: Source Sans Pro;
-    src: url(./source-sans-pro/SourceSansPro-Bold.otf)
+    font-weight: bold;
+    font-style: normal;
+    src: url(./source-sans-pro/SourceSansPro-Bold.otf) format('opentype');
+}
+
+@font-face{
+    font-family: Source Sans Pro;
+    font-weight: normal;
+    font-style: normal;
+    src: url(./source-sans-pro/SourceSansPro-Regular.otf) format('opentype');
+}
+
+@font-face{
+    font-family: Source Sans Pro;
+    font-weight: 300;
+    font-style: normal;
+    src: url(./source-sans-pro/SourceSansPro-Light.otf) format('opentype');
+}
+
+@font-face{
+    font-family: Source Sans Pro;
+    font-weight: 600;
+    font-style: normal;
+    src: url(./source-sans-pro/SourceSansPro-Semibold.otf) format('opentype');
+}
+
+@font-face{
+    font-family: Source Sans Pro;
+    font-weight: 600;
+    font-style: normal;
+    src: url(./source-sans-pro/SourceSansPro-It.otf) format('opentype');
+}
+
+@font-face{
+    font-family: Source Sans Pro;
+    font-weight: 900;
+    font-style: normal;
+    src: url(./source-sans-pro/SourceSansPro-Black.otf) format('opentype');
+}
+
+#home-pg h1,
+.smigh,
+#quoteContent h3,
+.video h3,
+.faq-h3,
+.mixed,
+header,
+.tutDivClass h3 {
+    font-family: 'Source Sans Pro';
+    font-weight: bold;
+}
+
+.proAwd,
+#quoteContent p {
+    font-family: 'Source Sans Pro';
+    font-weight: normal;
+    font-style: italic;
+}
+
+#quoteContent blockquote,
+.vidDescription, 
+.faq-p,
+#footer-section p,
+.memberDiv p {
+    font-family: 'Source Sans Pro';
+    font-weight: normal;
+    font-style: normal;
+}
+
+.register,
+.author h4,
+.minutes,
+.memberDiv h3 {
+    font-family: 'Source Sans Pro';
+    font-weight: 600;
+    font-style: normal;
+}
+
+#tutorials h2,
+#pros h2,
+#membership h2{
+    font-family: 'Source Sans Pro';
+    font-weight: 300;
+    font-style: normal;
 }
 
 body{
     background-image: url(./Object.png);
     background-repeat: no-repeat;
-    font-family: Source Sans Pro;
     color:#ffffff;
     margin: 0;
 }
@@ -148,6 +230,9 @@ a:active{
 
 .proName{
     margin-bottom: 10px;
+    font-family: Source Sans Pro;
+    font-weight: 900;
+    font-style: normal;
 }
 
 .proAwd{
@@ -322,6 +407,9 @@ a:active{
     text-align: center;
     font-size: 60px;
     margin-top: 50px;
+    font-family: Source Sans Pro;
+    font-weight: 300;
+    font-style: normal;
 }
 
 #faq-div {
@@ -335,7 +423,7 @@ a:active{
 
 .divFaq {
     align-content: center;
-    transform: translate(60%, -0%);
+    transform: translate(45%, -0%);
     /* top: 50px; */
     /* right: 50%; */
     margin: 0px 50px;
