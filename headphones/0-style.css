@@ -1,52 +1,159 @@
 body {
     background-image: url("./images/headphones_hero_1.jpg");
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
+    background-position: center;
     margin: 0;
+    min-height: 100vh;
 }
 
 header {
     display: flex;
     flex-direction: row;
+    width: 100%;
 }
 
 #nav-bar{
     display:flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     width: 100%;
     margin: 30px 90px;
-    padding: 0 100px;
+    padding: 30px 50px;
     color: white;
+    position: relative;
+    box-sizing: border-box;
 }
 
 #nav-bar ul{
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-evenly;
+    margin: 0;
+    padding: 0;
 }
 
 #nav-bar ul li{
     list-style-type: none;
     margin: 0 20px;
     font-weight: bold;
-    font-size: 12;
+    font-size: 12px;
 }
 
 #nav-div{
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
 }
- 
+
+#menu, #close{
+    display: none;
+}
+
+#nav-bar .sideBar{
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100px;
+    z-index: 999;
+    display: flex;
+    /* background-color: rgba(156, 156, 156, 0.281); */
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-top: 80px;
+    /* transition: left 0.3s ease; */
+    text-align: center;
+}
+
+#menu:checked ~ .sideBar { /*~ is a sibling selector. it targets the element that comes right after the checkbox*/
+    left: 100px;
+    display: flex;
+}
+
+.sideBar li {
+    width: 100%;
+    padding: 15px 20px;
+    cursor: pointer;
+}
+
+#hamburger {
+    display: none;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+#ex-icon {
+    display: none;
+    cursor: pointer;
+    z-index: 1002;
+}
+
+#close:checked ~ .sideBar{
+    left: -250px;
+    display: none;
+}
+
 #headphone-h1{
     font-size: 20px;
     margin: 12px;
+    cursor: pointer;
+}
+
+@media (max-width: 600px){
+    body{
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    #hamburger {
+        display: block;
+        left: 0;
+        position: fixed;
+        margin-left: 10px;
+    }
+
+    .mainNav {
+        display: none !important;
+    }
+
+    #nav-bar{
+        padding: 20px;
+    }
+
+    #nav-bar .sideBar{
+        display: flex;
+    }
+
+
+    #headphone-home{
+        margin-top: 100px;
+    }
+
+    #p-container {
+        margin: 60px 20px;
+        width: calc(100% - 40px);
+    }
+
+    #ex-icon {
+        display: block;
+    }
+
+    #close:checked ~ .sideBar{
+    left: -100px;
+    }
+}
+
+main{
+    padding-top: 0px
 }
 
 #headphone-img{
     height: 35px;
-    width: 35px;
+    width: 161px;
 }
 
 #headphone-home {
@@ -55,7 +162,7 @@ header {
     flex-direction: column;
     text-align: center;
     color: white;
-    margin-top: 330px;
+    margin-top: 180px; 
 }
 
 #home-h3{
@@ -80,7 +187,7 @@ header {
 }
 
 #p-container {
-    margin: 60px 550px;
+    margin: 50px auto;
     width: 637px;
 }
 
